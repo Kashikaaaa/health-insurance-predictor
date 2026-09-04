@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HealthSecure | Insurance Predictor</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+
+        <div class="logo">
+            <div class="logo-icon">
+                ♥
+                <span>＋</span>
+            </div>
+
+            <div>
+                <h2>Health<span>Secure</span></h2>
+                <p>Insurance Predictor</p>
+            </div>
+        </div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#predict">Predict</a>
+            <a href="#insights">Insights</a>
+            <a href="#predict" class="nav-button">Get Started</a>
+        </nav>
+
+    </header>
+
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+
+        <!-- LEFT -->
+        <div class="hero-content">
+
+            <div class="small-badge">
+                AI-POWERED HEALTHCARE
+            </div>
+
+            <h1>
+                Health <span>Insurance</span>
+                <br>
+                Predictor
+            </h1>
+
+            <div class="title-line">
+                <span></span>
+                <b>•</b>
+            </div>
+
+            <p class="hero-description">
+                Get an estimated health insurance cost
+                tailored to your profile in seconds.
+            </p>
+
+
+            <!-- FEATURES -->
+
+            <div class="features">
+
+                <div class="feature">
+                    <div class="feature-icon">✦</div>
+
+                    <div>
+                        <h3>Accurate Prediction</h3>
+                        <p>ML model powered estimation</p>
+                    </div>
+                </div>
+
+
+                <div class="feature">
+                    <div class="feature-icon">♙</div>
+
+                    <div>
+                        <h3>Personalized for You</h3>
+                        <p>Based on your age, BMI, habits & more</p>
+                    </div>
+                </div>
+
+
+                <div class="feature">
+                    <div class="feature-icon">▥</div>
+
+                    <div>
+                        <h3>Smart & Secure</h3>
+                        <p>Your data is handled securely</p>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <a href="#predict" class="hero-button">
+                Predict Your Insurance
+                <span>→</span>
+            </a>
+
+        </div>
+
+
+        <!-- RIGHT VISUAL -->
+        <div class="hero-visual">
+
+            <!-- Glow -->
+            <div class="glow"></div>
+
+
+            <!-- Floating capsule -->
+            <div class="floating-card capsule">
+                💊
+            </div>
+
+
+            <!-- Floating people -->
+            <div class="floating-card people">
+                ♙♙
+            </div>
+
+
+            <!-- Floating medical -->
+            <div class="floating-card medical">
+                ✚
+            </div>
+
+
+            <!-- Main shield -->
+            <div class="shield-container">
+
+                <div class="shield">
+                    <div class="shield-cross">
+                        +
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- Clipboard -->
+            <div class="clipboard">
+
+                <div class="clip-top"></div>
+
+                <div class="clipboard-title">
+                    HEALTH INSURANCE
+                </div>
+
+                <div class="check-row">
+                    <span>✓</span>
+                    <div></div>
+                </div>
+
+                <div class="check-row">
+                    <span>✓</span>
+                    <div></div>
+                </div>
+
+                <div class="check-row">
+                    <span>✓</span>
+                    <div></div>
+                </div>
+
+                <div class="check-row">
+                    <span>✓</span>
+                    <div></div>
+                </div>
+
+            </div>
+
+
+            <!-- Family -->
+            <div class="family">
+
+                <div class="person large"></div>
+
+                <div class="person small"></div>
+
+                <div class="person baby"></div>
+
+            </div>
+
+
+            <!-- Umbrella -->
+            <div class="umbrella">
+                ☂
+            </div>
+
+
+            <!-- Heart -->
+            <div class="heart">
+                ♥
+                <small>⌁</small>
+            </div>
+
+
+            <!-- Platform -->
+            <div class="platform"></div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ABOUT -->
+    <section class="about-section" id="about">
+
+        <div class="section-heading">
+
+            <span>WHY HEALTHSECURE?</span>
+
+            <h2>
+                Smart predictions.
+                <br>
+                <span>Better planning.</span>
+            </h2>
+
+            <p>
+                Our machine learning model estimates your health
+                insurance premium using important factors such as
+                age, BMI, smoking status and region.
+            </p>
+
+        </div>
+
+
+        <div class="stats">
+
+            <div>
+                <strong>88%</strong>
+                <span>R² Score</span>
+            </div>
+
+            <div>
+                <strong>4.3K</strong>
+                <span>RMSE</span>
+            </div>
+
+            <div>
+                <strong>3</strong>
+                <span>ML Models Tested</span>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- PREDICT SECTION -->
+    <section class="predict-section" id="predict">
+
+        <div class="predict-heading">
+
+            <span>AI PREMIUM ESTIMATOR</span>
+
+            <h2>
+                Calculate Your
+                <span>Estimated Premium</span>
+            </h2>
+
+            <p>
+                Enter your information below and our ML model
+                will estimate your insurance charges.
+            </p>
+
+        </div>
+
+
+        <div class="predict-container">
+
+            <form id="predictionForm">
+
+                <div class="form-grid">
+
+                    <!-- AGE -->
+                    <div class="form-group">
+
+                        <label for="age">
+                            Age
+                        </label>
+
+                        <input
+                            type="number"
+                            id="age"
+                            min="0"
+                            max="100"
+                            placeholder="e.g. 30"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- SEX -->
+                    <div class="form-group">
+
+                        <label for="sex">
+                            Gender
+                        </label>
+
+                        <select id="sex" required>
+
+                            <option value="">
+                                Select gender
+                            </option>
+
+                            <option value="male">
+                                Male
+                            </option>
+
+                            <option value="female">
+                                Female
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- BMI -->
+                    <div class="form-group">
+
+                        <label for="bmi">
+                            BMI
+                        </label>
+
+                        <input
+                            type="number"
+                            id="bmi"
+                            min="0"
+                            max="70"
+                            step="0.1"
+                            placeholder="e.g. 25.5"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- CHILDREN -->
+                    <div class="form-group">
+
+                        <label for="children">
+                            Number of Children
+                        </label>
+
+                        <input
+                            type="number"
+                            id="children"
+                            min="0"
+                            max="10"
+                            placeholder="e.g. 1"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- SMOKER -->
+                    <div class="form-group">
+
+                        <label for="smoker">
+                            Smoker
+                        </label>
+
+                        <select id="smoker" required>
+
+                            <option value="">
+                                Select option
+                            </option>
+
+                            <option value="yes">
+                                Yes
+                            </option>
+
+                            <option value="no">
+                                No
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- REGION -->
+                    <div class="form-group">
+
+                        <label for="region">
+                            Region
+                        </label>
+
+                        <select id="region" required>
+
+                            <option value="">
+                                Select region
+                            </option>
+
+                            <option value="southwest">
+                                Southwest
+                            </option>
+
+                            <option value="southeast">
+                                Southeast
+                            </option>
+
+                            <option value="northwest">
+                                Northwest
+                            </option>
+
+                            <option value="northeast">
+                                Northeast
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    id="predictButton"
+                >
+                    Predict Premium
+                    <span>→</span>
+                </button>
+
+            </form>
+
+
+            <!-- RESULT -->
+            <div
+                id="result"
+                class="result-card hidden"
+            >
+
+                <div class="result-icon">
+                    ✓
+                </div>
+
+                <p>Estimated Insurance Premium</p>
+
+                <h2 id="predictionValue">
+                    $0
+                </h2>
+
+                <span>
+                    Based on the information provided
+                </span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- INSIGHTS -->
+    <section class="insights" id="insights">
+
+        <div>
+            <span>MODEL INSIGHTS</span>
+
+            <h2>
+                Powered by
+                <span>Machine Learning</span>
+            </h2>
+
+            <p>
+                We compared Linear Regression, Random Forest,
+                and Gradient Boosting. Gradient Boosting achieved
+                the best performance.
+            </p>
+        </div>
+
+
+        <div class="model-card">
+
+            <div>
+                <span>BEST MODEL</span>
+
+                <h3>
+                    Gradient Boosting
+                </h3>
+            </div>
+
+            <div class="metric">
+                <strong>0.880</strong>
+                <small>R² Score</small>
+            </div>
+
+            <div class="metric">
+                <strong>4315</strong>
+                <small>RMSE</small>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <footer>
+
+        <h3>
+            Health<span>Secure</span>
+        </h3>
+
+        <p>
+            ML-powered health insurance premium prediction.
+        </p>
+
+        <small>
+            Built with Python • Scikit-learn • FastAPI • Pydantic
+        </small>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
